@@ -267,19 +267,9 @@
                 placeOrder() {
                     let showcart = this.cart
                     if (this.firstName == '' && this.lastName == '' && this.phoneNumber == '' && this.cart.length == 0) {
-                        // Swal.fire(
-                        //     'Error!',
-                        //     'Fill all details!',
-                        //     'Error'
-                        // )
                         alert("Error! Fill all the details");
                     }
                     else{
-                        // Swal.fire(
-                        // 'Success!',
-                        // 'Order submitted successfully!',
-                        // 'success'
-                        // )
                         alert("Success! Order submitted successfully");
                         this.firstName = ''
                         this.lastName = ''
