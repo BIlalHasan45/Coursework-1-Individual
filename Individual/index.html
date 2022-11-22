@@ -91,7 +91,7 @@
                                             <option>--Sort By--</option>
                                             <option value="price">Price</option>
                                             <option value="location">Location</option>
-                                            <option value="avalibility">Avalibility</option>
+                                            <option value="avalibility">Availability</option>
                                             <option value="subject">Subject</option>
                                         </select>
                                     </div>
@@ -267,18 +267,20 @@
                 placeOrder() {
                     let showcart = this.cart
                     if (this.firstName == '' && this.lastName == '' && this.phoneNumber == '' && this.cart.length == 0) {
-                        Swal.fire(
-                            'Error!',
-                            'Fill all details!',
-                            'Error'
-                        )
+                        // Swal.fire(
+                        //     'Error!',
+                        //     'Fill all details!',
+                        //     'Error'
+                        // )
+                        alert("Error! Fill all the details");
                     }
                     else{
-                        Swal.fire(
-                        'Success!',
-                        'Order submitted successfully!',
-                        'success'
-                        )
+                        // Swal.fire(
+                        // 'Success!',
+                        // 'Order submitted successfully!',
+                        // 'success'
+                        // )
+                        alert("Success! Order submitted successfully");
                         this.firstName = ''
                         this.lastName = ''
                         this.phoneNumber = ''
